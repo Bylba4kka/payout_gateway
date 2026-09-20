@@ -36,3 +36,10 @@ payout_gateway = "payout_gateway.cli:main"
 
 [tool.poetry]
 packages = [{ include = "payout_gateway" }]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+pythonpath = ["."]
+testpaths = ["tests"]
