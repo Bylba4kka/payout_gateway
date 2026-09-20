@@ -1,8 +1,9 @@
 """Единая точка входа для запуска и служебных операций.
 
-    python -m payout_gateway run [--host H] [--port P] [--reload]   # API + фоновые воркеры
-    python -m payout_gateway migrate [revision]                      # миграции БД (по умолчанию head)
+python -m payout_gateway run [--host H] [--port P] [--reload]   # API + фоновые воркеры
+python -m payout_gateway migrate [revision]                      # миграции БД (по умолчанию head)
 """
+
 import argparse
 from collections.abc import Sequence
 
